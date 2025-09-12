@@ -1,0 +1,14 @@
+{
+  "name": "Grafica GSS",
+  "short_name": "Grafica GSS",
+  "start_url": "Formulario.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#333",
+  "description": "Formulário de Receituários",
+  "icons": [{
+    "src": "images/logo.png",
+    "sizes": "3073x1201",
+    "type": "image/png"
+  }]
+}
