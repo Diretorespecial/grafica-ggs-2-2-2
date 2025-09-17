@@ -344,3 +344,29 @@ if ('serviceWorker' in navigator) {
     .then(reg => console.log('Service Worker registered', reg))
     .catch(err => console.error('Service Worker **not** registered', err));
 }
+
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  installBtn.style.display = 'block';
+});
+
+installBtn.addEventListener('click', (e) => {
+  installBtn.style.display = 'none';
+  deferredPrompt.prompt();
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('User accepted the install prompt');
+    } else {
+      console.log('User dismissed the install prompt');
+    }
+    deferredPrompt = null;
+  });
+});
+
+window.addEventListener('appinstalled', (evt) => {
+  console.log('App installed');
+});
