@@ -227,7 +227,7 @@ $(document).ready(function () {
 
     // Procuração
     let procuracaoPath = docType == "tipo_amarelo" ? "assets/procuracao_a.png" : "assets/procuracao.png";
-    gerarPDF(procuracaoPath, 210, 297, "downloadBtn2", "procuracao.pdf", function (ctx2) {
+    gerarPDF(procuracaoPath, 210, 297, "downloadBtn2", "procuracao.jpeg", function (ctx2) {
       ctx2.font = "bold 40px Arial";
       ctx2.fillStyle = "black";
       if (docType == "tipo_amarelo") {
