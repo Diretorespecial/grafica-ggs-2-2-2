@@ -258,10 +258,4 @@ select:focus {
       justify-content: center;
   }
 }
-.subtitulo-endereco {
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  color: #1a73e8;
-}
+
