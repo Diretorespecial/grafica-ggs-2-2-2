@@ -62,13 +62,13 @@
                 <input type="radio" name="receituario" value="retinoides" /> Retinóides
               </label>
               <label>
-                <input class="radio" type="radio" name="receituario" value="tipo_b" /> Tipo B
+                <input class="radio" type="radio" name="receituario" value="tipo_b" /> B
               </label>
               <label>
-                <input class="radio" type="radio" name="receituario" value="tipo_b2" /> Tipo B2
+                <input class="radio" type="radio" name="receituario" value="tipo_b2" /> B2
               </label>
               <label>
-                <input class="radio" type="radio" name="receituario" value="tipo_amarelo" /> Tipo Amarelo
+                <input class="radio" type="radio" name="receituario" value="tipo_amarelo" /> Amarelo
               </label>
             </div>
           </fieldset>
@@ -131,7 +131,7 @@
                   <input type="text" id="rg" name="rg" required />
                 </div>
                 <div class="input-group">
-                  <label for="endereco">Endereço Comercial:</label>
+                  <label for="endereco">Endereço Comercial: (ex: Rua/Av, Bairro, Número, Cidade.)</label>
                   <input type="text" class="endereco" id="endereco" name="endereco" required />
                 </div>
                 <div class="input-group">
@@ -198,26 +198,6 @@
             </div>
           </fieldset>
 
-          <fieldset>
-            <legend><span class="number"></span>Quantidade e preço</legend>
-            <div class="input-group">
-              <label for="qtd">Quantidade (blocos)</label>
-              <select name="qtd" id="qtd" required>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="10">10</option>
-              </select>
-            </div>
-            <div class="input-group">
-              <label for="valor">Valor</label>
-              <input type="text" id="valor" name="valor" placeholder="R$ 100,00" disabled />
-            </div>
-          </fieldset>
-
           <button id="generateDoc" type="button">Gerar documentos</button>
         </form>
 
@@ -256,3 +236,6 @@
     <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
