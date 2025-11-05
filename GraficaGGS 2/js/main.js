@@ -72,7 +72,7 @@ $(document).ready(function () {
   // Alternar pessoa física
   $("#fisica").click(function () {
     $("#avisoP").html(`
-      ● Procuração, Requisição e Declaração (ambos gerados aqui) assinados no <a href="https://gov.br" target="_blank">gov.br</a>  <br>
+      ● Procuração, Requisição e Declaração55 (ambos gerados aqui) assinados no <a href="https://gov.br" target="_blank">gov.br</a>  <br>
       ● CRM frente e verso.<br>
       ● Declaração ou comprovante de endereço de atendimento em nome do médico (a Secretaria de Saúde aceita apenas contas de água, luz ou telefone) com até 90 dias de emissão.<br>
     `);
@@ -224,8 +224,8 @@ $(document).ready(function () {
     gerarImagem(procuracaoPath, "downloadBtn2", "procuracao_a.jpg", function (ctx2) {
       ctx2.font = "bold 40px Arial";
       ctx2.fillStyle = "black";
-      endereco1 = rua + " " + numero + " - " + bairro;
-      endereco2 = rua + " " + numero + " - " + ;
+      endereco1 = rua + "-" + numero + " - " + bairro;
+      endereco2 = rua + "-" + numero;
       if (docType == "tipo_amarelo") {
         ctx2.fillText(nome, 650, 820);
         ctx2.font = "bold 35px Arial";
@@ -371,6 +371,7 @@ installBtn.addEventListener('click', (e) => {
 window.addEventListener('appinstalled', (evt) => {
   console.log('App installed');
 });
+
 
 
 
