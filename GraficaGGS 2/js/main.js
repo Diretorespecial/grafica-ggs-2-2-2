@@ -198,7 +198,7 @@ $(document).ready(function () {
       ctx.font = docType == "tipo_amarelo" ? "50px TimesNewRoman" : "60px TimesNewRoman";
       ctx.fillStyle = "black";
       ctx.textAlign = "center";
-      endereco = endereco + " " + numero + " - " + bairro;
+     /* endereco = endereco + " " + numero + " - " + bairro;*/
       telefone = telefone + " - " + cidade + " - MG";
       if (docType == "tipo_amarelo") {
         ctx.fillText(nome, 1400, 160);
@@ -369,3 +369,4 @@ installBtn.addEventListener('click', (e) => {
 window.addEventListener('appinstalled', (evt) => {
   console.log('App installed');
 });
+
