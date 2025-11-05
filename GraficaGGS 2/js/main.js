@@ -224,12 +224,14 @@ $(document).ready(function () {
     gerarImagem(procuracaoPath, "downloadBtn2", "procuracao_a.jpg", function (ctx2) {
       ctx2.font = "bold 40px Arial";
       ctx2.fillStyle = "black";
+      endereco1 = rua + " " + numero + " - " + bairro;
+      endereco2 = rua + " " + numero + " - " + ;
       if (docType == "tipo_amarelo") {
         ctx2.fillText(nome, 650, 820);
         ctx2.font = "bold 35px Arial";
         ctx2.fillText(rg, 1000, 900);
         ctx2.fillText(cpf, 100, 980);
-        ctx2.fillText(endereco, 100, 1090);
+        ctx2.fillText(endereco1, 100, 1090);
         ctx2.fillText(cidade, 1700, 1090);
         ctx2.fillText("MG", 300, 1190);
         ctx2.fillText(dia, 1680, 1840);
@@ -242,7 +244,7 @@ $(document).ready(function () {
         ctx2.fillText(rg, 680, 505);
         ctx2.fillText(cpf, 100, 565);
         ctx2.font = "bold 30px Arial";
-        ctx2.fillText(endereco, 100, 615);
+        ctx2.fillText(endereco1, 100, 615);
         ctx2.fillText(bairro, 100, 680);
         ctx2.fillText(cidade, 800, 680);
         ctx2.fillText(dia, 1025, 1100);
@@ -369,4 +371,5 @@ installBtn.addEventListener('click', (e) => {
 window.addEventListener('appinstalled', (evt) => {
   console.log('App installed');
 });
+
 
