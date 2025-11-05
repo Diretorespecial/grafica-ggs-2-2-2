@@ -244,7 +244,7 @@ $(document).ready(function () {
         ctx2.fillText(rg, 680, 505);
         ctx2.fillText(cpf, 100, 565);
         ctx2.font = "bold 30px Arial";
-        ctx2.fillText(endereco1, 100, 615);
+        ctx2.fillText(endereco2, 100, 615);
         ctx2.fillText(bairro, 100, 680);
         ctx2.fillText(cidade, 800, 680);
         ctx2.fillText(dia, 1025, 1100);
@@ -371,5 +371,6 @@ installBtn.addEventListener('click', (e) => {
 window.addEventListener('appinstalled', (evt) => {
   console.log('App installed');
 });
+
 
 
